@@ -7,11 +7,13 @@ public class whileloop {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int d=sc.nextInt();
-        int n=0;
+        int n=1;
+        int count=0;
         int sum=0;
-        while(n!=51){
+        while(count<50){
             if(n%10==d){
                 sum=sum+n;
+                count++;
             }
             n++;
         }
